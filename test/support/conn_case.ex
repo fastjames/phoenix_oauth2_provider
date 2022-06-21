@@ -22,7 +22,6 @@ defmodule PhoenixOauth2Provider.ConnCase do
     quote do
       import Plug.Conn
       import Phoenix.ConnTest
-      # import DummyWeb.ConnCase
 
       alias Helpers, as: Routes
 

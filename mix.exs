@@ -36,11 +36,11 @@ defmodule PhoenixOauth2Provider.Mixfile do
   defp deps do
     [
       {:ex_oauth2_provider, git: "https://github.com/fastjames/ex_oauth2_provider.git", tag: "update_deps"},
-      {:phoenix, "~> 1.4"},
-      {:phoenix_html, "~> 2.0"},
+      {:phoenix, "~> 1.6"},
+      {:phoenix_html, "~> 3.0"},
 
-      {:phoenix_ecto, "~> 4.0.0", only: [:test, :dev]},
-      {:credo, "~> 1.1.0", only: [:dev, :test]},
+      {:phoenix_ecto, "~> 4.4.0", only: [:test, :dev]},
+      {:credo, "~> 1.6.0", only: [:dev, :test]},
       {:jason, "~> 1.0", only: [:dev, :test]},
 
       {:ex_doc, ">= 0.0.0", only: :dev},

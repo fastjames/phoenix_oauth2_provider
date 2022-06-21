@@ -35,7 +35,7 @@ defmodule PhoenixOauth2Provider.Mixfile do
 
   defp deps do
     [
-      {:ex_oauth2_provider, "~> 0.5.1"},
+      {:ex_oauth2_provider, git: "https://github.com/fastjames/ex_oauth2_provider.git", tag: "update_deps"},
       {:phoenix, "~> 1.4"},
       {:phoenix_html, "~> 2.0"},
 
@@ -45,9 +45,9 @@ defmodule PhoenixOauth2Provider.Mixfile do
 
       {:ex_doc, ">= 0.0.0", only: :dev},
 
-      {:ecto_sql, "~> 3.0.0", only: :test},
+      {:ecto_sql, "~> 3.8", only: :test},
       {:plug_cowboy, "~> 2.0", only: :test},
-      {:postgrex, "~> 0.14.0", only: :test}
+      {:postgrex, "~> 0.16.0", only: :test}
     ]
   end
 
